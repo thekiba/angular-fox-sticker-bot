@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  telegram-bot:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 8443:8443
+    volumes:
+      - /root/angular-fox-stickers/assets:/app/assets
+      - /root/angular-fox-stickers/data:/app/data
+      - /root/angular-fox-stickers/src:/app/src:ro
+      - /root/angular-fox-stickers/.telegram:/app/.telegram:ro
+    environment:
+      - TELEGRAM_API_TOKEN=${TELEGRAM_API_TOKEN}
+      - TELEGRAM_STICKERS_CHANNEL=${TELEGRAM_STICKERS_CHANNEL}
+      - TELEGRAM_LOGGER_CHANNEL=${TELEGRAM_LOGGER_CHANNEL}
+      - TELEGRAM_ERRORS_CHANNEL=${TELEGRAM_ERRORS_CHANNEL}
+      - TELEGRAM_WEBHOOK_ENABLED=${TELEGRAM_WEBHOOK_ENABLED}
+      - TELEGRAM_WEBHOOK_KEY=${TELEGRAM_WEBHOOK_KEY}
+      - TELEGRAM_WEBHOOK_PEM=${TELEGRAM_WEBHOOK_PEM}
+      - TELEGRAM_WEBHOOK_HOST=${TELEGRAM_WEBHOOK_HOST}
+      - TELEGRAM_WEBHOOK_PATH=${TELEGRAM_WEBHOOK_PATH}
+      - TELEGRAM_WEBHOOK_PORT=${TELEGRAM_WEBHOOK_PORT}
