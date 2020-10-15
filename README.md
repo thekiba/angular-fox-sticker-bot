@@ -1,6 +1,6 @@
 # Angular Fox Stickers Bot
 
-Попробовать бота [@angular_fox_sticker_bot](https://t.me/@angular_fox_sticker_bot) в telegram.
+Попробовать бота [@angular_fox_sticker_bot](https://t.me/angular_fox_sticker_bot) в telegram.
 
 ## 1. Подготовка к установке
 
