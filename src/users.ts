@@ -43,7 +43,7 @@ const usersSettings: UserSettings[] = [
     {
         name: 'smooth operator',
         id: 182958337,
-        mask: 'guepard',
+        mask: 'cheetah',
         font: Font.PixelWhite
     },
     {

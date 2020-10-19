@@ -66,13 +66,13 @@ export async function getStickers(
     config: StickerConfig
 ) {
   return Promise.all([
-    getTelegramSticker(bot, ctx, mask, font, text, config)
+    getTelegramSticker(bot, ctx, mask, font, text, config),
   ]);
 }
 
 export function stickerHandler(bot: Telegraf<TelegrafContext>, config: StickerConfig) {
   return async (ctx) => {
-    const text = ctx.inlineQuery.query;
+    let text = ctx.inlineQuery.query;
 
     if (!text || text.length <= 0) {
       return;
