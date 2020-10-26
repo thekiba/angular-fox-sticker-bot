@@ -81,6 +81,12 @@ const usersSettings: UserSettings[] = [
         id: 412714053,
         mask: 'kisya',
         font: Font.PixelWhite
+    },
+    {
+        name: 'miralina',
+        id: 280700978,
+        mask: 'miralina',
+        font: Font.PixelWhite
     }
 ];
 
