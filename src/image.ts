@@ -24,6 +24,7 @@ const maskTypeMap = {
   cheetah: 'assets/mask-cheetah.png',
   miralina: 'assets/mask-miralina.png',
   coffee: 'assets/mask-coffee.png',
+  pilaf: 'assets/mask-pilaf.png',
 } as const;
 
 export type MaskType = keyof typeof maskTypeMap;

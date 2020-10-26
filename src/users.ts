@@ -93,6 +93,12 @@ const usersSettings: UserSettings[] = [
         id: 87416394,
         mask: 'coffee',
         font: Font.PixelWhite
+    },
+    {
+        name: 'nodir',
+        id: 387088592,
+        mask: 'pilaf',
+        font: Font.PixelWhite
     }
 ];
 
