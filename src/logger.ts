@@ -17,7 +17,31 @@ export function loggerHandler(bot: Telegraf<TelegrafContext>, config: LoggerConf
             const chatId = config.loggerChannel;
             await bot.telegram.sendMessage(chatId, `
       ${name}: ${user} ${id}\r\n
-      ${query}
+      inline query: ${query}
+    `);
+        }
+
+        if (ctx.callbackQuery) {
+            const id = `#${ctx.from.id}`;
+            const user = `@${ctx.from.username}`;
+            const name = `${ctx.from.first_name} ${ctx.from.last_name}`;
+            const query = ctx.callbackQuery.data;
+            const chatId = config.loggerChannel;
+            await bot.telegram.sendMessage(chatId, `
+      ${name}: ${user} ${id}\r\n
+      action: ${query}
+    `);
+        }
+
+        if (ctx.message) {
+            const id = `#${ctx.from.id}`;
+            const user = `@${ctx.from.username}`;
+            const name = `${ctx.from.first_name} ${ctx.from.last_name}`;
+            const message = ctx.message.text;
+            const chatId = config.loggerChannel;
+            await bot.telegram.sendMessage(chatId, `
+      ${name}: ${user} ${id}\r\n
+      message: ${message}
     `);
         }
     }

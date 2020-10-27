@@ -27,7 +27,7 @@ export function startWebhook(bot: Telegraf<TelegrafContext>, config: WebhookConf
         source: tlsOptions.cert
     };
 
-    bot.telegram.setWebhook(webHookUrl, webHookCert, 100, ['inline_query', 'message']);
+    bot.telegram.setWebhook(webHookUrl, webHookCert, 100, ['inline_query', 'message', 'callback_query']);
     console.log(`Web Hook exposed on ${protocol}://${host}:${port}/${path}`);
     bot.telegram.getWebhookInfo().then(console.log);
 }
