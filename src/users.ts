@@ -19,7 +19,7 @@ const usersSettings: UserSettings[] = [
     {
         name: 'fox',
         id: 191513399,
-        mask: 'fox',
+        mask: 'fox3',
         font: Font.PixelWhite
     },
     {

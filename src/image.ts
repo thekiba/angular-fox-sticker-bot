@@ -5,6 +5,8 @@ import * as sharp from 'sharp';
 
 const maskTypeMap = {
   fox: 'assets/mask-fox.png',
+  fox2: 'assets/mask-fox2.png',
+  fox3: 'assets/mask-fox3.png',
   dragon: 'assets/mask-dragon.png',
   witch: 'assets/mask-witch.png',
   raspberry: 'assets/mask-raspberry.png',
