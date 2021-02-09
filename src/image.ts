@@ -7,6 +7,7 @@ const maskTypeMap = {
   fox: 'assets/mask-fox.png',
   fox2: 'assets/mask-fox2.png',
   fox3: 'assets/mask-fox3.png',
+  fox4: 'assets/mask-fox4.png',
   dragon: 'assets/mask-dragon.png',
   witch: 'assets/mask-witch.png',
   raspberry: 'assets/mask-raspberry.png',
@@ -29,6 +30,7 @@ const maskTypeMap = {
   pilaf: 'assets/mask-pilaf.png',
   jerry: 'assets/mask-jerry.png',
   gir: 'assets/mask-gir.png',
+  chickenloli: 'assets/mask-chickenloli.png'
 } as const;
 
 export type MaskType = keyof typeof maskTypeMap;
