@@ -6,7 +6,7 @@
 
 ### 1.1 Создание бота
 
-Создать бота через бота [@BotFather](https://t.me/BotFather) и соранить его API TOKEN.
+Создать бота через бота [@BotFather](https://t.me/BotFather) и сохранить его `API TOKEN`.
 
 ### 1.2 Настройка: Allow Groups?
 
@@ -14,7 +14,7 @@
 
 ### 1.3 Настройка: Inline Mode
 
-Разрешить созданному боту получать сообщения через Inline Mode через бота [@BotFather](https://t.me/BotFather).
+Разрешить созданному боту получать сообщения через `Inline Mode` через бота [@BotFather](https://t.me/BotFather).
 
 ### 1.4 Создание трех каналов
 
@@ -28,11 +28,11 @@
 
 ## 2. Установка
 
-Бот поддерживает два режима работы, для разработки подойдет режим Polling (п. 2.1), а для продакшена неободим режим WebHook (п.2.2).
+Бот поддерживает два режима работы, для разработки подойдет режим `Polling` (п. 2.1), а для продакшена неободим режим `WebHook` (п.2.2).
 
 ### 2.1 Polling
 
-> Пропустите пункт, если хотите настроить WebHook
+> Пропустите пункт, если хотите настроить `WebHook`
 
 Создать и заполнить файл `.env` со следующими параметрами:
 ```
@@ -43,15 +43,15 @@ TELEGRAM_ERRORS_CHANNEL=ERRORS_CHANNEL_ID
 TELEGRAM_WEBHOOK_ENABLED=false
 ```
 
-1. TELEGRAM_API_TOKEN — API TOKEN бота 
-2. TELEGRAM_STICKERS_CHANNEL — id канала для стикеров, имеет вид -1000000000
-3. TELEGRAM_LOGGER_CHANNEL — id канала для логирования сообщений, имеет вид -1000000000
-4. TELEGRAM_ERRORS_CHANNEL — id канала для логирования ошибок, имеет вид -1000000000
+1. TELEGRAM_API_TOKEN — `API TOKEN` бота 
+2. TELEGRAM_STICKERS_CHANNEL — id канала для стикеров, имеет вид `-1000000000`
+3. TELEGRAM_LOGGER_CHANNEL — id канала для логирования сообщений, имеет вид `-1000000000`
+4. TELEGRAM_ERRORS_CHANNEL — id канала для логирования ошибок, имеет вид `-1000000000`
 
 
 ### 2.2 WebHook
 
-> Пропустите пункт, если хотите настроить Polling
+> Пропустите пункт, если хотите настроить `Polling`
 
 Создать и заполнить файл `.env` со следующими параметрами:
 ```
@@ -67,24 +67,24 @@ TELEGRAM_WEBHOOK_PATH=RANDOM_PATH
 TELEGRAM_WEBHOOK_PORT=8443
 ```
 
-1. TELEGRAM_API_TOKEN — API TOKEN бота 
-2. TELEGRAM_STICKERS_CHANNEL — id канала для стикеров, имеет вид -1000000000
-3. TELEGRAM_LOGGER_CHANNEL — id канала для логирования сообщений, имеет вид -1000000000
-4. TELEGRAM_ERRORS_CHANNEL — id канала для логирования ошибок, имеет вид -1000000000
-5. TELEGRAM_WEBHOOK_KEY — пусть до файла .key
-6. TELEGRAM_WEBHOOK_PEM — пусть до файла .pem
-7. TELEGRAM_WEBHOOK_HOST — адрес хоста для webhook
-8. TELEGRAM_WEBHOOK_PATH — путь в url для webhook
-9. TELEGRAM_WEBHOOK_PORT — порт хоста для webhook
+1. TELEGRAM_API_TOKEN — `API TOKEN` бота 
+2. TELEGRAM_STICKERS_CHANNEL — id канала для стикеров, имеет вид `-1000000000`
+3. TELEGRAM_LOGGER_CHANNEL — id канала для логирования сообщений, имеет вид `-1000000000`
+4. TELEGRAM_ERRORS_CHANNEL — id канала для логирования ошибок, имеет вид `-1000000000`
+5. TELEGRAM_WEBHOOK_KEY — пусть до файла `.key`
+6. TELEGRAM_WEBHOOK_PEM — пусть до файла `.pem`
+7. TELEGRAM_WEBHOOK_HOST — адрес хоста для `webhook`
+8. TELEGRAM_WEBHOOK_PATH — путь в url для `webhook`
+9. TELEGRAM_WEBHOOK_PORT — порт хоста для `webhook`
 
 ## 3. Запуск
 
 Просто выполните команду:
-```
+```bash
 docker-compose up -d
 ```
 
 Чтобы посмотреть логи, выполните команду:
-```
+```bash
 docker-compose logs -f
 ```
